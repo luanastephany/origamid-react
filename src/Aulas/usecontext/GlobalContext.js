@@ -11,8 +11,13 @@ export const GlobalStorage = ({ children }) => {
       .then(json => setDados(json))
   }, [])
 
+  //func pra limpar o setDados
+  function limparDados() {
+    setDados(null)
+  }
+
   return (
-    <GlobalContext.Provider value={{ dados }}>
+    <GlobalContext.Provider value={{ dados, limparDados }}>
       {children}
     </GlobalContext.Provider>
   )
