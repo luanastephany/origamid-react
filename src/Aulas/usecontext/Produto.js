@@ -6,7 +6,8 @@ const Produto = () => {
   if (global.dados === null) return null
   return (
     <div>
-      Produto: {global.dados[0].nome}
+      Produto: {global.dados.map((produto) =>
+        <li key={produto.id}>{produto.nome}</li>)}
     </div>
   )
 }
