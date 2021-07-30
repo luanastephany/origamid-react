@@ -4,12 +4,14 @@ import Produtos from './Aulas/usestate/Produtos'
 import Context from './Aulas/usecontext/App'
 import Form from './Aulas/form/App'
 import Input from './Aulas/input/App'
+import Validacao from './Aulas/validacao/App'
 
 const routes = [
   { path: '/produtos', component: Produtos },
   { path: '/context', component: Context },
   { path: '/form', component: Form },
   { path: '/input', component: Input },
+  { path: '/validacao', component: Validacao },
 ]
 
 export default function App() {
