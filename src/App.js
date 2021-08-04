@@ -29,7 +29,7 @@ export default function App() {
         </nav>
         <Switch>
           {routes.map((route, index) => (
-            <Route key={index} exact {...route} />
+            <Route key={index} {...route} />
           ))}
         </Switch>
       </div>
